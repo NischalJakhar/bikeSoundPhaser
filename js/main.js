@@ -7,11 +7,13 @@ var GameState = {
         this.load.image('dirt1', 'assets/images/dirt1.png');
 
         this.load.image('busa','assets/images/hayabusa1.png');
+        this.load.image('monster','assets/images/monster.png');
         this.load.image('bullet','assets/images/bullet.png');
 
         this.load.audio('busaSound', 'assets/audio/busa.mp3');
         this.load.audio('bulletSound','assets/audio/bullet.mp3');
         this.load.audio('dirtSound','assets/audio/dirt.wav');
+        this.load.audio('monsterSound','assets/audio/monster.wav');
     },
     //executed after everything is loaded
     create: function() {
@@ -28,7 +30,8 @@ var GameState = {
         var bikeData = [
             {key:'busa',text:'Hayabusa',audio:'busaSound'},
             {key:'bullet',text:'Royal Enfield',audio:'bulletSound'},
-            {key:'dirt1',text:'Dirt Bike',audio:'dirtSound'}
+            {key:'dirt1',text:'Dirt Bike',audio:'dirtSound'},
+            {key:'monster',text:'Monster Bike',audio:'monsterSound'}
 
         ];
 
